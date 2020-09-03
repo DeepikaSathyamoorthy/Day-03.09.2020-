@@ -1,0 +1,30 @@
+import java.io.*;
+import java.util.ArrayList;
+import java.util.Scanner;
+class Sample {
+    static double calculateRuns(ArrayList<Integer> l)
+    {
+        double sum = 0;
+        for (double number : l) {
+            sum += number;
+      }
+      return sum;
+    }
+	public static void main (String[] args) {
+	    ArrayList <Integer> l = new ArrayList<>();
+	    Scanner input=new Scanner(System.in);
+	    System.out.println("Enter the no of matches");
+	    int num=input.nextInt();
+	     System.out.println("Enter the runs: ");
+	    for(int i=0;i<num;i++)
+	    {
+	        l.add(input.nextInt());
+	    }
+	    //System.out.println(l);
+	    double total=calculateRuns(l);
+	    System.out.println("Total: "+(int)total);
+	    double avg=(total/num);
+	    System.out.println("Average: "+avg);
+	    
+	}
+}

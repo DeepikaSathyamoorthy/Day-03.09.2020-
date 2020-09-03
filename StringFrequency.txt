@@ -1,0 +1,25 @@
+import java.util.*; 
+  
+public class Sample 
+{ 
+    public static void main(String[] args) 
+    { 
+        ArrayList<String> list = new ArrayList<String>(); 
+        list.add("M. A. Chidambaram Stadium"); 
+        list.add("M. A. Chidambaram Stadium"); 
+        list.add("M. A. Chidambaram Stadium"); 
+        list.add("M. Chinnaswamy Stadium");
+        list.add("M. Chinnaswamy Stadium");
+        list.add("Wankhede Stadium");
+        list.add("Eden Gardens");
+        list.add("M. A. Chidambaram Stadium");
+        
+      
+        System.out.println("The frequency of the word is: "+  
+                                Collections.frequency(list, "M. A. Chidambaram Stadium"));  
+    
+        
+        
+        
+    } 
+}

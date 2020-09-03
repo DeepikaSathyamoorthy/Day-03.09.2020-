@@ -1,0 +1,24 @@
+
+
+import java.io.*;
+import java.util.TreeSet;
+import java.util.Scanner;
+class Sample {
+	public static void main (String[] args) {
+	    TreeSet <Integer> l = new TreeSet<>();
+	    Scanner input=new Scanner(System.in);
+	    System.out.println("Enter the no of matches");
+	    int num=input.nextInt();
+	     System.out.println("Enter the runs: ");
+	    for(int i=0;i<num;i++)
+	    {
+	        l.add(input.nextInt());
+	    }
+	    //System.out.println(l);
+	    for(int runs : l)
+	    {
+	        System.out.println(runs);
+	    }
+	    
+	}
+}
